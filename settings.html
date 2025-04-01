@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            body {
+                min-width: 350px;
+                max-width: 500px;
+                text-align: center;
+                margin: 0;
+            }
+            .logo-container {
+                margin-bottom: 4px;
+                color: #ffffff;
+                background-color: #5e2fbd;
+                padding: 10px;
+            }
+            .option {
+                margin-bottom: 4px;
+            }
+            .control-table {
+                margin-bottom: 4px;
+                display: inline-block;
+            }
+            .small-input {
+                width: 64px;
+            }
+            .map-button-disabled {
+                pointer-events: none;
+                background-color: #aaa;
+            }
+            .target-label {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            #settings{
+                padding: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo-container">
+            <img src="img/cloudgamepad-48.png">
+            <span id="version">?.?.?</span>
+        </div>
+        <div id="first-run-notification">
+            If you already have the cloud service open, you must refresh the window before CloudGamepad will function.
+            <button type="button" id="first-run-notification-close-button">I understand</button>
+        </div>
+        <div id="settings">
+            <div id="finding-joysticks">
+                Finding joysticks...
+            </div>
+            <div id="joystick-settings" style="display: none;">
+                <div class="option">
+                    <button type="button" id="gamepad-refresh-button">Refresh gamepads</button>
+                </div>
+                <div class="option">
+                    <label for="gamepad-select" class="target-label">Select target gamepad</label>
+                    <select id="gamepad-select"></select>
+                </div>
+                <table class="control-table">
+                    <thead>
+                        <tr>
+                            <th>Control</td>
+                            <th>Mapping</td>
+                            <th>Scale</td>
+                            <th>Offset</td>
+                        </tr>
+                    </thead>
+                    <tbody id="control-list"></tbody>
+                </table>
+            </div>
+            <div class="option">
+                <label for="disable-cloudgamepad">Disable CloudGamepad</label>
+                <input type="checkbox" id="disable-cloudgamepad">
+            </div>
+            <div class="option">
+                <label for="apply-button">Apply changes (causes refresh)</label>
+                <button type="button" id="apply-button">Apply</button>
+            </div>
+            <div class="option">
+                <label for="reset-button">Reset settings (causes refresh)</label>
+                <button type="button" id="reset-button">Reset</button>
+            </div>
+        </div>
+        <script src="settings.js"></script>
+    </body>
+</html>

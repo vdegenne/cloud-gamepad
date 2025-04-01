@@ -1,0 +1,6 @@
+{
+	"name": "cloud-gamepad",
+	"devDependencies": {
+		"@types/chrome": "^0.0.313"
+	}
+}

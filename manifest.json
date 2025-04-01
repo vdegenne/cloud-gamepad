@@ -1,0 +1,76 @@
+{
+	"action": {
+		"default_icon": {
+			"128": "img/cloudgamepad-128.png",
+			"16": "img/cloudgamepad-16.png",
+			"32": "img/cloudgamepad-32.png",
+			"48": "img/cloudgamepad-48.png"
+		},
+		"default_popup": "settings.html"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"js": ["content.js"],
+			"matches": [
+				"https://gamepad-tester.com/*",
+				"https://hardwaretester.com/*",
+				"https://hexgaming.com/*",
+				"https://gamepad.e7d.io/*",
+				"https://cloud.boosteroid.com/*",
+				"https://www.xbox.com/*",
+				"https://play.geforcenow.com/*",
+				"https://shadow.tech/*",
+				"https://www.paperspace.com/*",
+				"https://parsec.app/*",
+				"https://www.nvidia.com/*",
+				"https://playkey.net/*",
+				"https://www.netboom.com/*",
+				"https://www.blacknut.com/*",
+				"https://www.furioos.com/*",
+				"https://luna.amazon.com/*",
+				"https://stadia.google.com/*"
+			],
+			"run_at": "document_start"
+		}
+	],
+	"description": "Remap the keys of your gamepad on the browser. It works in many cloud gamining services.",
+	"icons": {
+		"128": "img/cloudgamepad-128.png",
+		"16": "img/cloudgamepad-16.png",
+		"32": "img/cloudgamepad-32.png",
+		"48": "img/cloudgamepad-48.png"
+	},
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmZk4XtHmbHIeMijbsrpvmJuljWBhMh9JCrsMLCRCmUBJ/m6UKIX9a3Y0TzvHRSwJwyGBDD0S3gSt+2mO6Dzg50mtV7o1pUstQIAbyP1zRf8ag8U3aAkvdG5XuicC7QTt+XwI7jKRaILl+7AcWX5NoKp7kNHDgdY4vtyoZpU+3PAnIuG+tIGuTj0oek3bLq3mc9JOoxrGrxw5XKNIDBufZ3Ojh+DX4Myz7jIARXclIgQxmwJNbvDqsQ9RZol5V1WyzQJY6tL87VY1/WpaDt5HFfk55XJWBCyOW3pG2EnZjt3ib+riXNqcD09qoY1DMbfe0C4NYUXQp5gOz/l+S9AlPQIDAQAB",
+	"manifest_version": 3,
+	"name": "CloudGamepad",
+	"permissions": ["storage", "declarativeContent"],
+	"update_url": "https://clients2.google.com/service/update2/crx",
+	"version": "0.0.5",
+	"web_accessible_resources": [
+		{
+			"matches": [
+				"https://gamepad-tester.com/*",
+				"https://hardwaretester.com/*",
+				"https://hexgaming.com/*",
+				"https://gamepad.e7d.io/*",
+				"https://cloud.boosteroid.com/*",
+				"https://www.xbox.com/*",
+				"https://play.geforcenow.com/*",
+				"https://shadow.tech/*",
+				"https://www.paperspace.com/*",
+				"https://parsec.app/*",
+				"https://www.nvidia.com/*",
+				"https://playkey.net/*",
+				"https://www.netboom.com/*",
+				"https://www.blacknut.com/*",
+				"https://www.furioos.com/*",
+				"https://luna.amazon.com/*",
+				"https://stadia.google.com/*"
+			],
+			"resources": ["cloudgamepad.js"]
+		}
+	]
+}
