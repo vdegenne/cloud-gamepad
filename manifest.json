@@ -33,7 +33,7 @@
 				"https://luna.amazon.com/*",
 				"https://stadia.google.com/*"
 			],
-			"run_at": "document_start"
+			"run_at": "document_end"
 		}
 	],
 	"description": "Remap the keys of your gamepad on the browser. It works in many cloud gamining services.",
