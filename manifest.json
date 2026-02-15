@@ -15,25 +15,27 @@
 		{
 			"js": ["content.js"],
 			"matches": [
-				"https://gamepad-tester.com/*",
-				"https://hardwaretester.com/*",
-				"https://hexgaming.com/*",
-				"https://gamepad.e7d.io/*",
-				"https://cloud.boosteroid.com/*",
-				"https://www.xbox.com/*",
-				"https://play.geforcenow.com/*",
-				"https://shadow.tech/*",
-				"https://www.paperspace.com/*",
-				"https://parsec.app/*",
-				"https://www.nvidia.com/*",
-				"https://playkey.net/*",
-				"https://www.netboom.com/*",
-				"https://www.blacknut.com/*",
-				"https://www.furioos.com/*",
-				"https://luna.amazon.com/*",
-				"https://stadia.google.com/*"
+				"<all_urls>"
+				// "https://gamepad-tester.com/*",
+				// "https://hardwaretester.com/*",
+				// "https://hexgaming.com/*",
+				// "https://gamepad.e7d.io/*",
+				// "https://cloud.boosteroid.com/*",
+				// "https://www.xbox.com/*",
+				// "https://play.geforcenow.com/*",
+				// "https://shadow.tech/*",
+				// "https://www.paperspace.com/*",
+				// "https://parsec.app/*",
+				// "https://www.nvidia.com/*",
+				// "https://playkey.net/*",
+				// "https://www.netboom.com/*",
+				// "https://www.blacknut.com/*",
+				// "https://www.furioos.com/*",
+				// "https://luna.amazon.com/*",
+				// "https://stadia.google.com/*"
 			],
-			"run_at": "document_end"
+			"run_at": "document_end",
+			"all_frames": true
 		}
 	],
 	"description": "Remap the keys of your gamepad on the browser. It works in many cloud gamining services.",
@@ -52,23 +54,24 @@
 	"web_accessible_resources": [
 		{
 			"matches": [
-				"https://gamepad-tester.com/*",
-				"https://hardwaretester.com/*",
-				"https://hexgaming.com/*",
-				"https://gamepad.e7d.io/*",
-				"https://cloud.boosteroid.com/*",
-				"https://www.xbox.com/*",
-				"https://play.geforcenow.com/*",
-				"https://shadow.tech/*",
-				"https://www.paperspace.com/*",
-				"https://parsec.app/*",
-				"https://www.nvidia.com/*",
-				"https://playkey.net/*",
-				"https://www.netboom.com/*",
-				"https://www.blacknut.com/*",
-				"https://www.furioos.com/*",
-				"https://luna.amazon.com/*",
-				"https://stadia.google.com/*"
+				"<all_urls>"
+				// "https://gamepad-tester.com/*",
+				// "https://hardwaretester.com/*",
+				// "https://hexgaming.com/*",
+				// "https://gamepad.e7d.io/*",
+				// "https://cloud.boosteroid.com/*",
+				// "https://www.xbox.com/*",
+				// "https://play.geforcenow.com/*",
+				// "https://shadow.tech/*",
+				// "https://www.paperspace.com/*",
+				// "https://parsec.app/*",
+				// "https://www.nvidia.com/*",
+				// "https://playkey.net/*",
+				// "https://www.netboom.com/*",
+				// "https://www.blacknut.com/*",
+				// "https://www.furioos.com/*",
+				// "https://luna.amazon.com/*",
+				// "https://stadia.google.com/*"
 			],
 			"resources": ["cloudgamepad.js"]
 		}
